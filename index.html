@@ -25,7 +25,7 @@
       }
     </style>
   </head>
-  <body class="theme2">
+  <body class="theme1">
     <main class="main-con">
       <header>
         <h4>calc</h4>
@@ -37,48 +37,52 @@
             <span>3</span>
           </div>
 
-          <div class="toggle-con">
-            <button class="ball show"></button>
-            <button class="ball"></button>
-            <button class="ball"></button>
+          <div class="show1" id="toggle-con">
+            <button class="ball" id="ball-1" data-theme="theme1"></button>
+            <button class="ball" id="ball-2" data-theme="theme2"></button>
+            <button class="ball" id="ball-3" data-theme="theme3"></button>
           </div>
         </div>
       </header>
-      <secton id="result">
-        <div>
-          <p>232442526</p>
+      <div class="calculator">
+<secton id="result" >
+        <div >
+          <!-- <p id="calculation"></p> -->
+          <p id="final">0</p>
         </div>
       </secton>
       <secton id="numbers">
-        <div class="grid-con">
-          <div>7</div>
-          <div>8</div>
-          <div>9</div>
-          <div id="delete">DEL</div>
-          <div>4</div>
-          <div>5</div>
-          <div>6</div>
-          <div>+</div>
-          <div>1</div>
-          <div>2</div>
-          <div>3</div>
-          <div id="minus-sign">-</div>
-          <div id="decimal-sign">.</div>
-          <div>0</div>
-          <div id="division-sign">/</div>
-          <div id="product-sign">x</div>
-          <div id="reset">RESET</div>
-          <div id="equal">=</div>
+        <div class="calculator-con">
+          <div data-type= 'number' class="number">7</div>
+          <div data-type= 'number' class="number">8</div>
+          <div data-type= 'number' class="number">9</div>
+          <div  data-type='delete' class="delete" id="delete">DEL</div>
+          <div data-type= 'number' class="number">4</div>
+          <div data-type= 'number' class="number">5</div>
+          <div data-type= 'number' class="number">6</div>
+          <div data-type='operator' class='operator' data-key ='plus' id="plus">+</div>
+          <div data-type= 'number' class="number">1</div>
+          <div data-type= 'number' class="number">2</div>
+          <div data-type= 'number' class="number">3</div>
+          <div data-type='operator' data-key ='minus' class='operator' id="minus">-</div>
+          <div data-type='number' data-id='decimal' class="decimal">.</div>
+          <div data-type= 'number' class="number">0</div>
+          <div data-type='operator' class='operator' data-key ='division' id="division">/</div>
+          <div data-type='operator' class='operator' data-key ='product' id="product">x</div>
+          <div data-type='reset' id="reset">RESET</div>
+          <div data-type='equal' id="equal">=</div>
         </div>
       </secton>
+      </div>
+      
       <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="https://www.github.com/carissaayo">YussufAjao</a>.
-    </div>
+        Challenge by
+        <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+          >Frontend Mentor</a
+        >. Coded by <a href="https://www.github.com/carissaayo">YussufAjao</a>.
+      </div>
     </main>
 
-    
+    <script defer src="./js/app.js"></script>
   </body>
 </html>
