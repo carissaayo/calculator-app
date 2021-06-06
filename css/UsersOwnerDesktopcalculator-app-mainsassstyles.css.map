@@ -1,0 +1,9 @@
+{
+    "version": 3,
+    "mappings": "AAAA;;;;;;;;;;;;;;;;;;EAkBE;AACF,AAAA,IAAI,AAAA,OAAO,CAAC;EACV,WAAW,EAAE,GAAG;EAChB,WAAW,EAAE,SAAS;EACtB,OAAO,EAAE,2DAA2D;CAAG",
+    "sources": [
+        "../UsersOwnerDesktopcalculator-app-mainsassstyles.scss"
+    ],
+    "names": [],
+    "file": "UsersOwnerDesktopcalculator-app-mainsassstyles.css"
+}

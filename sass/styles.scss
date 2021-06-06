@@ -1,0 +1,153 @@
+@import "variables";
+@import "toggleBtn";
+@import "theme1";
+@import "theme2";
+@import "theme3";
+
+*,
+*:before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: linear 0.3s;
+}
+
+body {
+  font-weight: 700;
+  font-size: 22px;
+  font-family: 'Spartan', sans-serif;
+
+  .main-con {
+    width: 310px;
+    text-align: center;
+    padding: 20px 20px;
+    margin: 20px auto;
+    header {
+      width: 310px;
+      h4 {
+        font-size: 1.2rem;
+      }
+      @include flex();
+      font-size: 0.7rem;
+      margin-bottom: 20px;
+      .theme-control {
+        position: relative;
+        @include flex();
+        text-transform: uppercase;
+        p {
+          margin-right: 7px;
+        }
+        .theme-numbers {
+          position: absolute;
+          top: -13px;
+          left: 55px;
+          font-size: 0.6rem;
+        }
+      }
+      #toggle-con {
+        @include flex();
+        justify-content: space-around;
+        width: 50px;
+        height: 15px;
+        border-radius: 7px;
+        position: relative;
+        .ball {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+          outline: none;
+          border: none;
+          cursor: pointer;
+          opacity: 0;
+
+          // position: absolute;
+          // left: 4px;
+        }
+       
+      }
+      .show1 #ball-1 {
+        opacity: 1;
+     
+      }
+      .show2 #ball-2 {
+        
+        opacity: 1;
+
+      }
+      .show3 #ball-3 {
+        
+        opacity: 1;
+
+      }
+      div {
+        span {
+          margin-right: 8px;
+        }
+      }
+    }
+    #result {
+      color: $white;
+      font-size: 32px;
+
+      div {
+        width: 310px;
+        height: 70px;
+        text-align: right;
+        padding: 15px;
+        border-radius: 5px;
+        margin-bottom: 10px;
+      }
+    }
+    #numbers {
+      .calculator-con {
+        border-radius: 10px;
+        width: 310px;
+        height: 275px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: repeat(4, 60px);
+        grid-template-rows: repeat(5, 40px);
+        column-gap: 10px;
+        row-gap: 10px;
+        grid-template-areas:
+          "a a a a"
+          "a a a a"
+          "a a a a"
+          "a a a a"
+          "reset reset equal equal";
+
+        div {
+          background-color: $keyBackground;
+          font-size: 22px;
+          padding: 7px;
+          border-radius: 5px;
+          cursor: pointer;
+
+          &#delete {
+            font-size: 0.8rem;
+            padding: 12px;
+          }
+          &#reset {
+            grid-area: reset;
+            font-size: 0.8rem;
+            padding: 12px;
+          }
+          &#equal {
+            grid-area: equal;
+            font-size: 1rem;
+            padding: 12px;
+          }
+        }
+      }
+    }
+    .attribution {
+      margin-top: 5px;
+      font-size: 11px;
+      text-align: center;
+    }
+    // .attribution a {
+    //   color: $theme2keyBackgroundAndToggle;
+    // }
+  }
+}

@@ -1,0 +1,61 @@
+$mainBackground: hsl(222, 26%, 31%);
+$toggleAndKeypadBackground: hsl(223, 31%, 20%);
+$screenBackground: hsl(224, 36%, 15%);
+$keyBackground: hsl(225, 21%, 49%);
+$keyShadow1: hsl(224, 28%, 35%);
+$keyBackgroundAndToggle: hsl(6, 63%, 50%);
+$keyShadow3: hsl(6, 70%, 34%);
+$keyBackground: hsl(30, 25%, 89%);
+$keyShadow2: hsl(28, 16%, 65%);
+$darkTextColor: hsl(221, 14%, 31%);
+$white: hsl(0, 0, 100%);
+
+body.theme1 {
+ 
+background-color: $mainBackground;
+  .main-con {
+    header {
+      color: $white;
+      
+      #toggle-con{
+        background-color: $toggleAndKeypadBackground;
+        .ball{
+          background-color: $keyBackgroundAndToggle;
+        }
+      
+      }
+    }
+
+      #result {
+        color: $white;
+
+        div {
+          background-color: $screenBackground;
+        }
+      }
+      #numbers {
+       .calculator-con {
+          background-color: $toggleAndKeypadBackground;
+
+          div {
+            background-color: $keyBackground;
+
+            &#delete {
+              background-color: $mainBackground;
+            }
+            &#reset {
+              color: white;
+              background-color: $mainBackground;
+            }
+            &#equal {
+              background-color: $keyBackgroundAndToggle;
+              color: $white;
+            }
+          }
+        }
+      }
+      .attribution a {
+        color: $keyBackgroundAndToggle;
+      }
+    }
+  }

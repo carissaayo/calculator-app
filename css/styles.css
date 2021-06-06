@@ -1,0 +1,308 @@
+body.theme1 {
+  background-color: #3a4764;
+}
+
+body.theme1 .main-con header {
+  color: white;
+}
+
+body.theme1 .main-con header #toggle-con {
+  background-color: #232c43;
+}
+
+body.theme1 .main-con header #toggle-con .ball {
+  background-color: #d03f2f;
+}
+
+body.theme1 .main-con #result {
+  color: white;
+}
+
+body.theme1 .main-con #result div {
+  background-color: #182034;
+}
+
+body.theme1 .main-con #numbers .calculator-con {
+  background-color: #232c43;
+}
+
+body.theme1 .main-con #numbers .calculator-con div {
+  background-color: #eae3dc;
+}
+
+body.theme1 .main-con #numbers .calculator-con div#delete {
+  background-color: #3a4764;
+}
+
+body.theme1 .main-con #numbers .calculator-con div#reset {
+  color: white;
+  background-color: #3a4764;
+}
+
+body.theme1 .main-con #numbers .calculator-con div#equal {
+  background-color: #d03f2f;
+  color: white;
+}
+
+body.theme1 .main-con .attribution a {
+  color: #d03f2f;
+}
+
+body.theme2 {
+  background-color: #e6e6e6;
+}
+
+body.theme2 .main-con {
+  background-color: #e6e6e6;
+}
+
+body.theme2 .main-con header {
+  color: #35352c;
+}
+
+body.theme2 .main-con header #toggle-con {
+  background-color: #d1cccc;
+}
+
+body.theme2 .main-con header #toggle-con .ball {
+  background-color: #ca5502;
+}
+
+body.theme2 .main-con #result {
+  color: #35352c;
+}
+
+body.theme2 .main-con #result div {
+  background-color: #ededed;
+}
+
+body.theme2 .main-con #numbers .calculator-con {
+  background-color: #d1cccc;
+}
+
+body.theme2 .main-con #numbers .calculator-con div {
+  background-color: #e5e4e1;
+}
+
+body.theme2 .main-con #numbers .calculator-con div#delete {
+  background-color: #377f86;
+}
+
+body.theme2 .main-con #numbers .calculator-con div#reset {
+  color: white;
+  background-color: #377f86;
+}
+
+body.theme2 .main-con #numbers .calculator-con div#equal {
+  background-color: #ca5502;
+  color: white;
+}
+
+body.theme2 .attribution a {
+  color: #ca5502;
+}
+
+body.theme3 {
+  background-color: #160628;
+}
+
+body.theme3 .main-con {
+  background-color: #160628;
+  color: #ffe53d;
+}
+
+body.theme3 .main-con header {
+  color: #ffe53d;
+}
+
+body.theme3 .main-con header #toggle-con {
+  background-color: #1d0934;
+}
+
+body.theme3 .main-con header #toggle-con .ball {
+  background-color: #00e0d1;
+}
+
+body.theme3 .main-con #result {
+  color: #ffe53d;
+}
+
+body.theme3 .main-con #result div {
+  background-color: #1d0934;
+}
+
+body.theme3 .main-con #numbers .calculator-con {
+  background-color: #1d0934;
+  color: #ffe53d;
+}
+
+body.theme3 .main-con #numbers .calculator-con div {
+  background-color: #341c4f;
+}
+
+body.theme3 .main-con #numbers .calculator-con div#delete {
+  background-color: #58077d;
+}
+
+body.theme3 .main-con #numbers .calculator-con div#reset {
+  color: white;
+  background-color: #58077d;
+}
+
+body.theme3 .main-con #numbers .calculator-con div#equal {
+  background-color: #00e0d1;
+  color: white;
+}
+
+body.theme3 .main-con .attribution a {
+  color: #00e0d1;
+}
+
+*,
+*:before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  transition: linear 0.3s;
+}
+
+body {
+  font-weight: 700;
+  font-size: 22px;
+}
+
+body .main-con {
+  width: 310px;
+  text-align: center;
+  padding: 20px 20px;
+  margin: 20px auto;
+}
+
+body .main-con header {
+  width: 310px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.7rem;
+  margin-bottom: 20px;
+}
+
+body .main-con header h4 {
+  font-size: 1.2rem;
+}
+
+body .main-con header .theme-control {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+body .main-con header .theme-control p {
+  margin-right: 7px;
+}
+
+body .main-con header .theme-control .theme-numbers {
+  position: absolute;
+  top: -13px;
+  left: 55px;
+  font-size: 0.6rem;
+}
+
+body .main-con header #toggle-con {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-around;
+  width: 50px;
+  height: 15px;
+  border-radius: 7px;
+  position: relative;
+}
+
+body .main-con header #toggle-con .ball {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  outline: none;
+  border: none;
+  cursor: pointer;
+  opacity: 0;
+}
+
+body .main-con header .show1 #ball-1 {
+  opacity: 1;
+}
+
+body .main-con header .show2 #ball-2 {
+  opacity: 1;
+}
+
+body .main-con header .show3 #ball-3 {
+  opacity: 1;
+}
+
+body .main-con header div span {
+  margin-right: 8px;
+}
+
+body .main-con #result {
+  color: white;
+  font-size: 32px;
+}
+
+body .main-con #result div {
+  width: 310px;
+  height: 70px;
+  text-align: right;
+  padding: 15px;
+  border-radius: 5px;
+  margin-bottom: 10px;
+}
+
+body .main-con #numbers .calculator-con {
+  border-radius: 10px;
+  width: 310px;
+  height: 275px;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 60px);
+  grid-template-rows: repeat(5, 40px);
+  column-gap: 10px;
+  row-gap: 10px;
+  grid-template-areas: "a a a a" "a a a a" "a a a a" "a a a a" "reset reset equal equal";
+}
+
+body .main-con #numbers .calculator-con div {
+  background-color: #eae3dc;
+  font-size: 22px;
+  padding: 7px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+body .main-con #numbers .calculator-con div#delete {
+  font-size: 0.8rem;
+  padding: 12px;
+}
+
+body .main-con #numbers .calculator-con div#reset {
+  grid-area: reset;
+  font-size: 0.8rem;
+  padding: 12px;
+}
+
+body .main-con #numbers .calculator-con div#equal {
+  grid-area: equal;
+  font-size: 1rem;
+  padding: 12px;
+}
+
+body .main-con .attribution {
+  margin-top: 5px;
+  font-size: 11px;
+  text-align: center;
+}
+/*# sourceMappingURL=styles.css.map */

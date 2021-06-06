@@ -1,0 +1,63 @@
+$theme2mainBackground:hsl(0, 0%, 90%);
+$theme2toggleAndKeypadBackground:hsl(0, 5%, 81%);
+$theme2screenBackground:hsl(0, 0%, 93%);
+$theme2keyBackground2:hsl(185, 42%, 37%);
+$theme2keyShadow1:hsl(185, 58%, 25%);
+$theme2keyBackgroundAndToggle:hsl(25, 98%, 40%);
+$theme2keyShadow3:hsl(25, 99%, 27%);
+$theme2keyBackground1:hsl(45, 7%, 89%);
+$theme2keyShadow2:hsl(35, 11%, 61%);
+$theme2darkTextColor:hsl(60, 10%, 19%);
+$theme2white: hsl(0, 0, 100%);
+
+
+body.theme2{
+  background-color: $theme2mainBackground;
+    .main-con {
+        background-color: $theme2mainBackground;
+    header {
+      color: $theme2darkTextColor;
+      #toggle-con{
+        background-color: $theme2toggleAndKeypadBackground;
+        .ball{
+          background-color: $theme2keyBackgroundAndToggle;
+        }
+      
+      }
+    }
+
+      #result {
+        color: $theme2darkTextColor;
+
+        div {
+          background-color: $theme2screenBackground;
+        }
+      }
+      #numbers {
+        .calculator-con {
+          background-color: $theme2toggleAndKeypadBackground;
+
+          div {
+            background-color: $theme2keyBackground1;
+
+            &#delete {
+              background-color: $theme2keyBackground2;
+            }
+            &#reset {
+              color: white;
+              background-color: $theme2keyBackground2;
+            }
+            &#equal {
+              background-color: $theme2keyBackgroundAndToggle;
+              color: $theme2white;
+            }
+          }
+        }
+      }
+    }
+ 
+      .attribution a {
+        color: $theme2keyBackgroundAndToggle;
+      }
+  }
+

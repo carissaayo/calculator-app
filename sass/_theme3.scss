@@ -1,0 +1,61 @@
+$theme3mainBackground: hsl(268, 75%, 9%);
+$theme3toggleAndKeypadBackground: hsl(268, 71%, 12%);
+$theme3screenBackground: hsl(268, 71%, 12%);
+$theme3keyBackground2: hsl(281, 89%, 26%);
+$theme3keyShadow1: hsl(285, 91%, 52%);
+$theme3keyBackgroundAndToggle: hsl(176, 100%, 44%);
+$theme3keyShadow3: hsl(177, 92%, 70%);
+$theme3keyBackground1: hsl(268, 47%, 21%);
+$theme3keyShadow2: hsl(290, 70%, 36%);
+$theme3darkTextColor: hsl(198, 20%, 13%);
+$theme3white: hsl(0, 0, 100%);
+$theme3lightYellow: hsl(52, 100%, 62%);
+
+body.theme3 {
+  background-color: $theme3mainBackground;
+  .main-con {
+    background-color: $theme3mainBackground;
+    color: $theme3lightYellow;
+    header {
+      color: $theme3lightYellow;
+      #toggle-con {
+        background-color: $theme3toggleAndKeypadBackground;
+        .ball {
+          background-color: $theme3keyBackgroundAndToggle;
+        }
+      }
+    }
+    #result {
+      color: $theme3lightYellow;
+
+      div {
+        background-color: $theme3screenBackground;
+      }
+    }
+    #numbers {
+      .calculator-con {
+        background-color: $theme3toggleAndKeypadBackground;
+        color: $theme3lightYellow;
+        div {
+          background-color: $theme3keyBackground1;
+
+          &#delete {
+            background-color: $theme3keyBackground2;
+          }
+          &#reset {
+            color: $theme3white;
+            background-color: $theme3keyBackground2;
+          }
+          &#equal {
+            background-color: $theme3keyBackgroundAndToggle;
+            color: $theme3white;
+          }
+        }
+      }
+    }
+
+    .attribution a {
+      color: $theme3keyBackgroundAndToggle;
+    }
+  }
+}
